@@ -1,0 +1,514 @@
+/* work sans font from google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,500&display=swap');
+
+
+/* Shared Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    color: #534C64;
+}
+.primary-color {
+    color: #FF42A5;
+
+}
+
+.btn-primary {
+    font-size: 1rem;
+    font-weight: 400px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: #FF42A5;
+    color: white;
+    border: 0;
+}
+
+.container{
+    max-width: 1220px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
+.bg-light{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+}
+/* Nav styles */
+.site-logo {
+    width: 85px;
+    height: 40px;
+}
+
+.title {
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.site-title {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+.follow-btn {
+    width: 200px;
+    height: 45px;
+    border-radius: 8px;
+    padding-left: 10px;
+    background: rgba(11, 2, 35, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.follow-btn img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* banner section styles */
+
+.banner-container {
+    display: flex;
+    gap: 50px;
+    width: auto;
+    height: 400px;
+    justify-content: left;
+    align-items: center;
+}
+
+.banner-container li {
+    list-style: none;
+    line-height: 32px;
+}
+
+.banner-title-container {
+    background-image: url("../images/Group 14.png");
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 10px 0;
+}
+
+.banner-btns-container {
+    margin-top: 15px;
+    margin-left: -60px;
+}
+
+
+.banner-img {
+    height: 100%;
+}
+
+.banner-title {
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-goat {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #F948B2;
+}
+
+.btn-blue {
+    margin-left: 20px;
+    background-color: #4EC5F7;
+}
+
+
+/* we are gamer section */
+ .sm-img{
+    width: 60%;
+ }
+.we-gemer-info{
+    text-align: right;
+    max-width: 400px;
+    text-align: right;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* card Section Styles */
+.card-section {
+    width: 80%;
+    margin: 70px auto;
+}
+
+.card-section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-title,
+.instant-play-title {
+
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.card-desc,
+.instant-play-desc {
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.card {
+    width: 342px;
+    height: 340px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.card img {
+    width: 90%;
+    height: auto;
+}
+
+.card p {
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* instant Play styles */
+
+.instant-play-section {
+
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.instant-play-title-container {
+    text-align: center;
+}
+
+.play-img-big {
+    width: 300px;
+}
+
+.play-img-small {
+    position: relative;
+    left: 80px;
+    top: 35px;
+    width: 150px;
+}
+
+/* game buttons section */
+
+.game-button-section {
+    margin-top: 50px;
+    background-color: rgba(255, 66, 165, 0.03);
+    height: auto;
+}
+
+.game-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.game-button img {
+    padding-left: 7px;
+    width: 40px;
+}
+
+.game-button h4 {
+    color: #0B0223;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.game-button:hover {
+    width: 198px;
+    height: 48px;
+    border: 2px solid #F948B2;
+    cursor: pointer;
+}
+
+.game-button:hover h4 {
+    color: #F948B2;
+}
+
+.game-button-container {
+    width: 95%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}
+
+
+/* footer styles */
+footer {
+    background-color: #0B0223;
+    padding: 20px;
+    height: auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 5x;
+}
+
+.txt-white {
+    color: white;
+}
+
+.footer-link-container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-icon-container{
+    width: 50%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+}
+.footer-link-container li {
+    list-style: none;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer-icon{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon:hover{
+    color: palevioletred;
+}
+
+.footer-policy-container{
+    width: 50%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 10px;
+    /* border: 1px solid red; */
+}
+
+.footer-policy p, .copyright-text p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 0.7rem;
+    text-align: center;
+
+}
+
+.footer-copyright-text-container{
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 576px) {
+
+    nav {
+        flex-direction: column;
+        height: 250px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        background-size: 850px 650px;
+        height: auto;
+        gap: 10px;
+    }
+
+    .banner-img {
+        width: 60%;
+    }
+
+    .banner-title-container {
+        width: 80%;
+    }
+
+    .btn-blue {
+        margin-left: 0px;
+    }
+
+    /* make cards responsive */
+
+    .card-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card img {
+        width: 60%;
+    }
+
+    .card {
+        width: 342px;
+        height: 310px;
+
+    }
+
+    /* make instant play section responsive */
+    .instant-play-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* make footer section responsive */
+    .footer-link-container{
+        /* display: grid; */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        /* justify-items: center; */
+        width: 90%;
+    }
+
+    .footer-icon-container{
+        grid-template-columns: repeat(3, 1fr);
+        width: 60%;
+    }
+    .footer-policy-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-copyright-text-container{
+        width: 70%;
+        margin: 20px auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    .sm-img {
+        width: 100%;
+    }
+
+    .we-gemer-info {
+        text-align: center;
+        align-items: center;
+        gap: 15px;
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    nav {
+        flex-direction: column;
+        height: 250px;
+    }
+
+    .btn-blue {
+        margin-left: 0px;
+    }
+
+    .banner-img {
+        width: 40%;
+    }
+
+    /* make footer section responsive */
+    .footer-link-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        width: 90%;
+    }
+    .footer-icon-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-policy-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-icon-container{
+        margin: 20px auto;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
